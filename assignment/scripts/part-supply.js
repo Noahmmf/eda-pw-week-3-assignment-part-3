@@ -18,9 +18,9 @@ console.log("3. Second supplyChange is:", supplyChange[1]);
 
 // 4. The last item was added by mistake. Remove it from the 'supplyChanges'
 //    array & console.log the value removed.
-supplyChange.pop(-1);
+supplyChange.pop();
 
-console.log("4. Removed item:", supplyChange);
+console.log("4. Removed last item 11 from list, new list is:", supplyChange);
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 supplyChange.push(25);
@@ -42,7 +42,7 @@ for (let i = 0; i < supplyChange.length; i++) {
   } else if (parts === 0) {
     console.log("no change");
   } else {
-    console.log("removed", -parts, "parts.");
+    console.log("removed" + parts + "parts.");
   }
 }
 
@@ -67,7 +67,7 @@ console.log("8. Total supplies available is:");
 
 let total = 0;
 
-for (parts of supplyChange) {
+for (let parts of supplyChange) {
   total += parts;
 }
 
